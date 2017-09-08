@@ -1,0 +1,7 @@
+sudo avrdude -c usbasp -p atmega32  -U lfuse:w:0xe4:m
+avrdude -c usbasp -p atmega32 -U lfuse:w:0xe4:m -U hfuse:w:0x99:m 
+avrdude -c usbasp -p atmega32 -U hfuse:w:0xD9:m
+avrdude -c usbtiny -p attiny2313 -U hfuse:w:0xD9:m
+
+
+sudo avrdude -c avrispmkII -p atmega2560 -U lfuse:w:0xff:m -U hfuse:w:0xda:m -U efuse:w:0xfd:m 
